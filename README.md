@@ -5,4 +5,4 @@ Required dependencies
 
 `All SDL2 development libraries`
 
-Meson build system
+`Meson build system`
