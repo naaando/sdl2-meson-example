@@ -30,8 +30,6 @@ sdl2mixer_lib  = meson.get_compiler('c').find_library('SDL2_mixer')
 sdl2mixer_vapi = meson.get_compiler('vala').find_library('sdl2-mixer', dirs: join_paths(meson.current_source_dir(), 'vapi'))
 sdl2mixer_dep  = declare_dependency(dependencies: [sdl2mixer_lib, sdl2mixer_vapi])
 
-# posix_dep = meson.get_compiler('vala').find_library('sdl2')
-# sdl2 --pkg sdl2-gfx --pkg sdl2-ttf --pkg sdl2-image --pkg sdl2-mixer -X -lSDL2_image -X -lSDL2_ttf -X -lSDL2_mixer -X -lSDL2_gfx appname.vala
 subdir ('src')
 
 executable('sdl-sample',
