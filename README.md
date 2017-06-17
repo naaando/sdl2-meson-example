@@ -1,4 +1,4 @@
-# This is a Vala example of SDL2 library using a updated toolset of development
+# Vala example of SDL2 library using meson build system
 
 
 Required dependencies
